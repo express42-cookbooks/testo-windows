@@ -1,7 +1,0 @@
-name             'testo-windows'
-maintainer       'LLC Express 42'
-maintainer_email 'cookbooks@express42.com'
-license          'MIT'
-description      'Installs/Configures testo-windows'
-long_description 'Installs/Configures testo-windows'
-version          '0.1.0'

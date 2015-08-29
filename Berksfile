@@ -1,3 +1,6 @@
-source "https://supermarket.chef.io"
+source 'https://supermarket.chef.io'
 
-metadata
+group :base do
+  cookbook 'chef-client'
+  cookbook 'windows'
+end

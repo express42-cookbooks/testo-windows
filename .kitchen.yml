@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: 12
+  data_bags_path: data_bags
+  client_rb:
+    environment: vagrant
+
+platforms:
+  - name: windows-2012r2
+    driver:
+      communicator: winrm
+    transport:
+      name: winrm
+
+suites:
+  - name: base
+    run_list:
+      - role[base]

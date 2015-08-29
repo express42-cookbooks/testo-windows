@@ -1,0 +1,16 @@
+{
+  "name": "base",
+  "description": "Base role",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+  },
+  "run_list": [
+    "recipe[chef-client::config]",
+    "recipe[chef-client::windows_service]",
+    "recipe[chef-client::delete_validation]"
+  ]
+}
